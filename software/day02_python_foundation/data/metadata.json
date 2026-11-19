@@ -1,0 +1,16 @@
+{
+    "project": "Optical Sensor Logger V1",
+    "day": 2,
+    "data_source": "SIMULATED",
+    "sensor_type": "Simulated analog input",
+    "hardware_connected": false,
+    "generated_at_utc": "2026-11-19T12:21:28.401873+00:00",
+    "adc_resolution_bits": 12,
+    "adc_max_count": 4095,
+    "reference_voltage_v": 3.3,
+    "sampling_rate_hz": 100,
+    "sample_count": 300,
+    "signal_frequency_hz": 1.5,
+    "random_seed": 42,
+    "voltage_conversion": "adc_raw / adc_max_count * vref_v"
+}
