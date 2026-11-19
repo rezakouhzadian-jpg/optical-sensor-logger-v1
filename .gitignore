@@ -1,4 +1,28 @@
-﻿.venv/
+﻿# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache files
 __pycache__/
 *.py[cod]
+
+# Testing and development cache
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Visual Studio Code local settings
+.vscode/
+
+# Runtime logs
+logs/*
+!logs/.gitkeep
+
+# Raw experimental data
+data/raw/*
+!data/raw/.gitkeep
+
+# Temporary files
+*.tmp
+*.bak

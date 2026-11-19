@@ -425,39 +425,3 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
-
-def plot_measurements(
-    time_values: np.ndarray,
-    voltage_values: np.ndarray,
-    ideal_voltage: np.ndarray
-) -> None:
-
-    fig, ax = plt.subplots(figsize=(10, 5))
-
-    ax.plot(
-        time_values,
-        voltage_values,
-        linewidth=1.2,
-        label="Measured Voltage"
-    )
-
-    ax.plot(
-        time_values,
-        ideal_voltage,
-        linestyle="--",
-        linewidth=1.5,
-        label="Ideal Voltage"
-    )
-
-    ax.set_title("Ideal vs Measured Sensor Voltage")
-    ax.set_xlabel("Time (s)")
-    ax.set_ylabel("Voltage (V)")
-
-    ax.grid(True, alpha=0.3)
-    ax.legend()
-
-    fig.tight_layout()
-    fig.savefig(PLOT_FILE, dpi=150)
-    plt.close(fig)
-
-    print(f"Plot saved to: {PLOT_FILE}")
